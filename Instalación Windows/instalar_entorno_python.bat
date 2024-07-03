@@ -1,9 +1,9 @@
 @echo off
 
-REM Cambiar al directorio donde se encuentra el entorno virtual y el script
-cd /d "C:\Users\andre\OneDrive\Escritorio\UPWork\Nico"
+REM REEMPLAZA LA SIGUIENTE LíNEA DENTRO DE LAS " COMILLAS DOBLES LA CARPETA DONDE DEJASTE EL PROYECTO "
+cd /d "C:\Ejemplo\De\Ruta"
 if %ERRORLEVEL% neq 0 (
-    echo Error: No se pudo cambiar al directorio %SCRIPT_DIR%.
+    echo Error: No se pudo cambiar al directorio especificado.
     pause
     exit /b %ERRORLEVEL%
 )
@@ -41,6 +41,14 @@ REM Instalar las dependencias desde requirements.txt
 pip install -r requirements.txt
 if %errorlevel% neq 0 (
     echo Error al instalar las dependencias.
+    pause
+    exit /b 1
+)
+
+REM Instalar PlayWright
+playwright install
+if %errorlevel% neq 0 (
+    echo Error al instalar playwright.
     pause
     exit /b 1
 )

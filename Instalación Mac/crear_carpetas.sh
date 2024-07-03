@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Cambiar al directorio donde se encuentra el entorno virtual y el script
-cd "/Users/andre/OneDrive/Escritorio/UPWork/Nico" || {
+# REEMPLAZA LA SIGUIENTE LíNEA DENTRO DE LAS " COMILLAS DOBLES LA CARPETA DONDE DEJASTE EL PROYECTO "
+cd "/Ejemplo/de/ruta/" || {
     echo "Error: No se pudo cambiar al directorio /Users/andre/OneDrive/Escritorio/UPWork/Nico."
     exit 1
 }

@@ -1,6 +1,6 @@
 @echo off
-REM Cambiar al directorio donde se encuentra el entorno virtual y el script
-cd /d "C:\Users\andre\OneDrive\Escritorio\UPWork\Nico"
+REM REEMPLAZA LA SIGUIENTE LíNEA DENTRO DE LAS " COMILLAS DOBLES LA CARPETA DONDE DEJASTE EL PROYECTO "
+cd /d "C:\Ejemplo\De\Ruta"
 if %ERRORLEVEL% neq 0 (
     echo Error: No se pudo cambiar al directorio %SCRIPT_DIR%.
     pause
