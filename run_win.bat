@@ -2,7 +2,7 @@
 REM REEMPLAZA LA SIGUIENTE LíNEA DENTRO DE LAS " COMILLAS DOBLES LA CARPETA DONDE DEJASTE EL PROYECTO "
 cd /d "C:\Ejemplo\De\Ruta"
 if %ERRORLEVEL% neq 0 (
-    echo Error: No se pudo cambiar al directorio %SCRIPT_DIR%.
+    echo Error: No se pudo cambiar al directorio.
     pause
     exit /b %ERRORLEVEL%
 )
