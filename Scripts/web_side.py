@@ -1,3 +1,5 @@
+import time
+
 def run_browser(playwright, link, df, form_settings_df, social_dict):
 
     df_columns = df.columns
@@ -38,8 +40,9 @@ def run_browser(playwright, link, df, form_settings_df, social_dict):
             """
         )
 
-        page.wait_for_selector(
-            '//p[text()="GRACIAS POR SU REGISTRO"]', timeout=10000)
+        # page.wait_for_selector(
+        #     '//p[text()="GRACIAS POR SU REGISTRO"]', timeout=10000)
+        time.sleep(5)
 
         page.evaluate(
             """
